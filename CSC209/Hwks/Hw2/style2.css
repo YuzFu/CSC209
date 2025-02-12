@@ -1,7 +1,11 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: Verdana, serif;
     background-color: black;
     color: white;
+    background: url("https://www.smith.edu/sites/default/files/styles/paragraph_banner_small/public/2023-05/pano0001-pano-edit-2-2.jpg.webp?itok=Pci9f62K");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
 
 header {
