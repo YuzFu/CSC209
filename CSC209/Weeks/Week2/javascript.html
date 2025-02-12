@@ -7,13 +7,13 @@
     </head>
 
     <body>
-        <h2>Use JavaScript to Change Text</h2>
-        <p>This example writes "Hello JavaScript!" into an HTML element with id="demo":</p>
+        <h1>Date and Time Demo</h1>
+
+        <button type="button"
+        onclick="document.getElementById('demo').innerHTML = Date()">
+        Click me to display Date and Time in EST.</button>
 
         <p id="demo"></p>
-
-        <script>
-        document.getElementById("demo").innerHTML = "Hello JavaScript!";
-        </script> 
+        
     </body>
 </html>
