@@ -5,14 +5,14 @@ body {
 }
 
 header {
-    background-color: red;
-    color: white;
+    background-color: yellowgreen;
+    color: wheat;
     text-align: center;
     padding: 20px;
 }
 
 nav {
-    background-color: darkgray;
+    background-color: violet;
     padding: 10px;
 }
 
@@ -29,7 +29,7 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     font-weight: bold;
-    color: white;
+    color: wheat;
 }
 
 section {
@@ -42,7 +42,7 @@ table {
 }
 
 th {
-    background-color: gray;
+    background-color: thistle;
     padding: 10px;
 }
 
