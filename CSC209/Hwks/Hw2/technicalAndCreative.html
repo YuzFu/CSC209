@@ -5,8 +5,89 @@
             Technical and Creative
         </title>
         <p>The technical part takes 2 hours, the creative part takes 1 hour.</p>
+
+        <link id="stylesheet" rel="stylesheet" href="style1.css">
+    <script>
+        function toggleReadMe() {
+            var text = document.getElementById("readMeText");
+            var button = document.getElementById("readMeButton");
+            if (text.style.display === "none") {
+                text.style.display = "block";
+                button.innerHTML = "Hide";
+            } else {
+                text.style.display = "none";
+                button.innerHTML = "Read me";
+            }
+        }
+
+        function switchStyle() {
+            var sheet = document.getElementById("stylesheet");
+            if (sheet.getAttribute("href") === "style1.css") {
+                sheet.setAttribute("href", "style2.css");
+            } else {
+                sheet.setAttribute("href", "style1.css");
+            }
+        }
+    </script>
     </head>
+
     <body>
+
+    <header>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Smith_College_logo_%282000%29%2C_color%2C_horizontal.svg/2560px-Smith_College_logo_%282000%29%2C_color%2C_horizontal.svg.png" alt="Smith College Logo" width="200">
+        <h1>CSC 209</h1>
+        <button onclick="switchStyle()">Toggle Style</button>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="https://yuzfu.github.io/CSC209-Github/CSC209/Hwks/Hw2/technicalAndCreative.html">Home</a></li>
+            <li><a href="https://yuzfu.github.io/CSC209-Github/CSC209/Hwks/Hw2/courseWork.html">Schedule</a></li>
+            <li><a href="https://yuzfu.github.io/CSC209-Github/CSC209/Hwks/Hw2/syllabus.html">Resources</a></li>
+            <li><a href="https://moodle.smith.edu/course/view.php?id=51863#section-0" target="_blank">Course Website</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h2>Schedule</h2>
+        <button id="readMeButton" onclick="toggleReadMe()">Read me</button>
+        <p id="readMeText" style="display:none;">This course is taught in a 3-hour session for the first time.</p>
+
+        <table border="1">
+            <tr>
+                <th>Week</th>
+                <th>Date</th>
+                <th>Topic</th>
+                <th>Links</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Jan 29</td>
+                <td>Software installation. Introduction to Html via W3schools tutorials.</td>
+                <td><a href="https://yuzfu.github.io/CSC209-Github/CSC209/Weeks/Week1">Week 1</a><br>
+                    <a href="https://yuzfu.github.io/CSC209-Github/CSC209/Hwks/Hw1">Homework 1</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Feb 5</td>
+                <td>Styling in plain Html and using Css. </td>
+                <td><a href="https://yuzfu.github.io/CSC209-Github/CSC209/Weeks/Week2">Week 2</a><br>
+                    <a href="https://yuzfu.github.io/CSC209-Github/CSC209/Hwks/Hw2">Homework 2</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Feb 12</td>
+                <td>Dynamic web pages with Javascript: functions, button actions. Part 1: Non-repetitive structures. More Javascript. Arrays of strings. Generate dynamic html lists.                 </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Feb 19</td>
+                <td>More Javascript</td>
+                <td></td>
+            </tr>
+        </table>
+    </section>
 
     </body>
 </html>
