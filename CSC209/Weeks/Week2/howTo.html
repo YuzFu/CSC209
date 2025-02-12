@@ -1,19 +1,47 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>
-            CSS How To
-        </title>
+        <title>CSS How To</title>
+
+        <style>
+            body {background-color: seashell;}
+            h3 {
+                color: darkgreen;
+                font-family: Georgia;
+                font-size: 200%;
+            }
+            p {
+                border: 2px solid linen;
+                padding: 30px;
+                margin: 50px;
+            }
+        </style>
+
+        <link rel="stylesheet" href="styles.css">
     </head>
 
     <body>
-        test
+        <h1 style="color:yellowgreen;">Inline CSS</h1>
+        <p>Check the headings!</p>
+
+        <h1>Internal CSS</h1>
+        <p>The background color of the webpage is defined via internal CSS.</p>
+
+        <h1>External CSS</h1>
+        <p>The text color of all paragraphs are defined via external CSS.</p>
+        <h2>Link to External CSS</h2>
         <ul>
-            <li><a href="default.asp">Home</a></li>
-            <li><a href="news.asp">News</a></li>
-            <li><a href="contact.asp">Contact</a></li>
-            <li><a href="about.asp">About</a></li>
-          </ul>
+            <li>&ltlink rel="stylesheet" href="https://www.w3schools.com/html/styles.css"&gt</li>
+            <li>&ltlink rel="stylesheet" href="/html/styles.css"&gt</li>
+            <li>&ltlink rel="stylesheet" href="styles.css"&gt</li>
+        </ul>
+
+        <h1>Inline CSS</h1>
+        <p style="color: pink;">This is an exmaple of inline CSS style!</p>
+
+        <h1>Common properties</h1>
+        <h3>This is an exmaple</h3>
+        <p>Check the styles section again, where you could find a demo of common css properties which applied to heading 3!</p>
+
     </body>
 </html>
-
