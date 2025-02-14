@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            If
+        </title>
+    </head>
+
+    <body>
+        <p><img id="dice" src="images/random.svg"></p>
+        <button onclick="document.getElementById('dice').src='images/'">Roll the dice</button>
+
+        <script>
+            function getRndInteger(min, max) {
+                return Math.floor(Math.random() * (max - min) ) + min;
+              }
+              
+        let text;
+        if (Math.random(6) == 1) {
+        text = "<a href='https://w3schools.com'>Visit W3Schools</a>";
+        } else {
+        text = "<a href='https://wwf.org'>Visit WWF</a>";
+        }
+        document.getElementById("dice").innerHTML = text;
+        </script>
+
+        
+
+    </body>
+</html>
+
+https://iconduck.com/icons/24024/perspective-dice-six-faces-three
