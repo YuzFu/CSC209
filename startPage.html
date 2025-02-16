@@ -9,41 +9,133 @@
             html {
                 background-image: url("images/herstory.jpeg");
                 background-repeat: no-repeat;
-                background-size: cover;
+                background-size: 100%;
+                background-position: center;
                 background-attachment: fixed;
+            }
+            
+            body, h1, h2, h3, p, a, div, button {
                 font-family: Garamond, serif;
+            }            
+            
+            .header {
+                background-color: rgba(228, 241, 242, 0.8);
+                text-align: center;
+                position: relative;
+                width: 95%;
+                padding: 10px;
+                top: 20px;
+                left: 20px;
+                right: 20px;
+                border-radius: 30px;
+                z-index: 2;
+            }
+            
+            .sidenav {
+                background-color: rgba(38, 34, 31, 0.8);
+                width: 180px;
+                position: fixed;
+                padding: 10px;
+                top: 190px; 
+                left: 20px;
+                border-radius: 30px;
+                z-index: 1;
+            }
+            
+            .sidenav a, .sidenav button, .sidenav .dropdown-btn {
+                padding: 10px 20px;
+                border: none;
+                background: none;
+                text-decoration: none;
+                font-size: 18px;
+                color: rgba(228, 241, 242, 0.8);
+                display: flex;
+                border-radius: 25px;
+                cursor: pointer;
+            }
+            
+            .sidenav a:hover, .dropdown-btn:hover, button:hover {
+                background-color: rgba(228, 241, 242, 0.3);
             }
 
-            div.transbox {
-                background-color: #ffffff;
-                border: 50px solid #ffffff;
-                opacity: 0.6;
+            .active {
+                background-color: rgba(38, 34, 31);
+                color: rgba(228, 241, 242);
             }
-
-            div.transbox p{
-                margin: 50%;
-                color: #000000;
+              
+            .dropdown-container {
+                display: none;
             }
+            
+            .main {
+                background-color: rgba(228, 241, 242, 0.8);
+                margin-left: 220px; /* To adjust for sidenav */
+                margin-top: 120px; /* Below the header */
+                font-size: 20px;
+                padding: 20px;
+                background-color: rgba(255, 255, 255, 0.8);
+                border-radius: 30px;
+                width: 60%;
+                position: relative;
+                margin: 20px auto;
+                top: 20px;
+                left: 0;
+                right: 0;
+            }            
+            
         </style>
     </head>
 
     <body>
 
-        <div class="transbox" style="text-align:center">
+        <div class="header">
             <h1>CSC 209</h1>
             <h2>Yuzhang Fu</h2>
         </div>
-        <h2>Author: Yuzhang Fu</h2>
 
-        <ol>
-            <li><a href="https://yuzfu.github.io/CSC209/Weeks/Week1/">Week 1</a></li>
-            <li><a href="https://yuzfu.github.io/CSC209/Weeks/Week2/">Week 2</a></li>
-        </ol>
+        <div class="sidenav">
+            <a href="https://yuzfu.github.io/CSC209/startPage.html">Home</a>
+            <button class="dropdown-btn">Weeks &#8628
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+              <a href="https://yuzfu.github.io/CSC209/Weeks/Week1/">Week 1</a>
+              <a href="https://yuzfu.github.io/CSC209/Weeks/Week2/">Week 2</a>
+              <a href="https://yuzfu.github.io/CSC209/Weeks/Week3/">Week 3</a>
+            </div>
+            <button class="dropdown-btn">Homeworks &#8628
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+              <a href="https://yuzfu.github.io/CSC209/Hwks/Hw1/">Homework 1</a>
+              <a href="https://yuzfu.github.io/CSC209/Hwks/Hw2/">Homework 2</a>
+              <a href="https://yuzfu.github.io/CSC209/Hwks/Hw3/">Homework 3</a>
+            </div>
+            <a href="https://github.com/YuzFu/CSC209">Github</a>
+            <a href="https://moodle.smith.edu/course/view.php?id=51863">Course Website</a>
+        </div>
+          
+        <script>
+        /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+          var dropdown = document.getElementsByClassName("dropdown-btn");
+          var i;
+          
+          for (i = 0; i < dropdown.length; i++) {
+            dropdown[i].addEventListener("click", function() {
+              this.classList.toggle("active");
+              var dropdownContent = this.nextElementSibling;
+              if (dropdownContent.style.display === "block") {
+                dropdownContent.style.display = "none";
+              } else {
+                dropdownContent.style.display = "block";
+              }
+            });
+        }
+        </script>
 
-        <ol>
-            <li><a href="https://yuzfu.github.io/CSC209/Hwks/Hw1/">Homework 1</a></li>
-            <li><a href="https://yuzfu.github.io/CSC209/Hwks/Hw2/">Homework 2</a></li>
-        </ol>
+        <main>
+            <h1>Syllabus</h1>
+        </main>
 
     </body>
 </html>
