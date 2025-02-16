@@ -2,12 +2,90 @@
 <html>
     <head>
         <title>
-            []
+            Creative
         </title>
-        <p>This part takes [] hours. </p>
+        <p>This part takes 1 hour.</p>
+
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            body {
+                font-family: Garamond, serif;
+            }
+            .header {
+                text-align: center;
+            }
+            .row {
+                display: flex;
+                flex-wrap: wrap;
+                padding: 0 4px;
+            }
+            .column {
+                flex: 50%;
+                padding: 0 4px;
+            }
+            .column img {
+                margin-top: 8px;
+                vertical-align: middle;
+                width: 100%;
+            }
+            .btn {
+                border: none;
+                padding: 10px;
+                background-color: #f1f1f1;
+                cursor: pointer;
+            }
+            .btn:hover {
+                background-color: #ddd;
+            }
+            .btn.active {
+                background-color: #666;
+                color: white;
+            }
+        </style>
     </head>
 
     <body>
+        <div class="header" id="myHeader">
+            <h1>Image Grid</h1>
+            <p>Tutorial from <a href="https://www.w3schools.com/howto/howto_js_image_grid.asp">W3Schools</a></p>
+            <button class="btn" onclick="one()">1</button>
+            <button class="btn active" onclick="two()">2</button>
+            <button class="btn" onclick="four()">4</button>
+        </div>
 
+        <div class="row"> 
+            <div class="column">
+                <img src="images/L2.jpg">
+                <img src="images/L5.jpg">
+                <img src="images/L3.jpg">
+                <img src="images/L6.jpg">
+                <img src="images/L4.jpg">
+                <img src="images/L6.jpg">
+            </div>
+            <div class="column">
+                <img src="images/L1.jpg">
+                <img src="images/L2.jpg">
+                <img src="images/L5.jpg">
+                <img src="images/L1.jpg">
+            </div>
+            <div class="column">
+                <img src="images/L2.jpg">
+                <img src="images/L5.jpg">
+                <img src="images/L3.jpg">
+                <img src="images/L6.jpg">
+                <img src="images/L4.jpg">
+                <img src="images/L6.jpg">
+            </div>
+            <div class="column">
+                <img src="images/L1.jpg">
+                <img src="images/L2.jpg">
+                <img src="images/L5.jpg">
+                <img src="images/L1.jpg">
+            </div>
+        </div>
+
+        <script src="js/gridLayout.js"></script>
     </body>
 </html>
