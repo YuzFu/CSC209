@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Switch
+        </title>
+    </head>
+
+    <body>
+        <h1>Get your chinese zodiac sign</h1>
+
+        <p>Input the year you were born:</p>
+
+        <input id="year" type="number"/>
+
+        <button onclick="myFunction()">Test</button>
+
+        <p id="demo"></p>
+
+        <script>
+        function myFunction(){
+        var year = parseInt(document.getElementById("year").value); 
+        let value = year%12;
+        switch (value) {
+        case 0:
+            day = "Monkey";
+            break;
+        case 1:
+            day = "Rooster";
+            break;
+        case 2:
+            day = "Dog";
+            break;
+        case 3:
+            day = "Pig";
+            break;
+        case 4:
+            day = "Rat";
+            break;
+        case 5:
+            day = "Ox";
+            break;
+        case  6:
+            day = "Tiger";
+            break;
+        case  7:
+            day = "Rabbit";
+            break;
+        case  8:
+            day = "Dragon";
+            break;
+        case  9:
+            day = "Snake";
+            break;
+        case  10:
+            day = "Horse";
+            break;
+        case  11:
+            day = "Goat";
+            break;
+        }
+        document.getElementById("demo").innerHTML = "Your sign is " + day + ".";
+        }
+        </script>
+    </body>
+</html>

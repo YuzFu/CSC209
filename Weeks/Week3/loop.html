@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            JS Loop
+        </title>
+    </head>
+
+    <body>
+        <h1>Get the sum of your number</h1>
+
+        <input id="value" type="number"/>
+
+        <button onclick="myFunction()">Sum up!</button>
+
+        <p id="demo"></p>
+
+        <script>
+        function myFunction() {
+            var value = parseInt(document.getElementById("value").value); 
+            var sum = 0;
+            for (var i = 0; i <= value; i++) {
+                sum += i;
+            }
+
+            document.getElementById("demo").innerHTML = "Sum: " + sum;
+        }
+        </script>
+    </body>
+</html>
