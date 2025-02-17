@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            CSS Navigation Bar
+        </title>
+        <style>
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                width: 60px;
+              }
+              
+            li a {
+                display: block;
+              }
+
+            li a:hover {
+                background-color: khaki;
+                color: black;
+            }
+            li a.active {
+                background-color: darkkhaki;
+                color: black;
+              }
+            li a:hover:not(.active) {
+                background-color: wheat;
+                color: black;
+              }
+        </style>
+    </head>
+
+    <body>
+        <ul>
+            <li><a class="active" href="https://en.wikipedia.org/wiki/France">France</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Canada">Canada</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/New_Zealand">New Zealand</a></li>
+          </ul>
+    </body>
+</html>
+

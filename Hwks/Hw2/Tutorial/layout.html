@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            CSS Layout
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <style>
+            * {
+              box-sizing: border-box;
+            }
+            
+            body {
+              font-family: Courier New, Garamond, Verdana;
+            }
+            
+            header {
+              background-color: aquamarine;
+              padding: 20px;
+              text-align: center;
+              font-size: 20px;
+              color: whitesmoke;
+            }
+            
+            nav {
+              float: left;
+              width: 20%;
+              height: 500px; 
+              background: chocolate;
+              padding: 20px;
+            }
+            
+            nav ul {
+              list-style-type: none;
+              padding: 0;
+            }
+            
+            article {
+              float: left;
+              padding: 20px;
+              width: 20%;
+              background-color: firebrick;
+              height: 500px; 
+            }
+            
+            section::after {
+              content: "";
+              display: table;
+              clear: both;
+            }
+            
+            footer {
+              background-color: darkblue;
+              padding: 10px;
+              text-align: center;
+              color: wheat;
+            }
+            
+            @media (max-width: 60px) {
+              nav, article {
+                width: 100%;
+                height: auto;
+              }
+            }
+            </style>
+    </head>
+
+    <body>
+        <header>
+            <h2>Countries</h2>
+          </header>
+          
+          <section>
+            <nav>
+              <ul>
+                <li><a href="#">France</a></li>
+                <li><a href="#">Canada</a></li>
+                <li><a href="#">New Zealand</a></li>
+              </ul>
+            </nav>
+            
+            <article>
+              <h1><a href="https://en.wikipedia.org/wiki/France"></a>France</h1>
+              <p>France, officially the French Republic, is a country located primarily in Western Europe. Its overseas regions and territories include French Guiana in South America, Saint Pierre and Miquelon in the North Atlantic, the French West Indies, and many islands in Oceania and the Indian Ocean, giving it one of the largest discontiguous exclusive economic zones in the world.</p>
+            </article>
+          </section>
+          
+          <footer>
+            <p>Footer</p>
+          </footer>
+    </body>
+</html>
