@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            If
+        </title>
+    </head>
+
+    <body>
+        <h1>The chinese zodiac year is:</h1>
+        <h2 id="demo"></h2>
+
+        <script>
+            const year = new Date().getFullYear;
+            let time = year%12;
+            let zodiac;
+            if (time == 0) {
+                zodiac = "Monkey";
+              } else if (time == 1) {
+                greeting = "Rooster";
+              } else if (time == 2) {
+                greeting = "Dog";
+              } else if (time == 3) {
+                greeting = "Pig";
+              } else if (time == 4) {
+                greeting = "Rat";
+              } else if (time == 5) {
+                greeting = "Ox";
+              } else if (time == 6) {
+                greeting = "Tiger";
+              } else if (time == 7) {
+                greeting = "Rabbit";
+              } else if (time == 8) {
+                greeting = "Dragon";
+              } else if (time == 9) {
+                greeting = "Snake";
+              } else if (time == 10) {
+                greeting = "Horse";
+              } else  {
+                greeting = "Goat";
+              }
+            document.getElementById("demo").innerHTML = greeting;
+            </script>
+
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            JS Comparison
+        </title>
+    </head>
+
+    <body>
+        <p>Input your p-value and click the button:</p>
+
+        <input id="value" value="0.05" />
+
+        <button onclick="myFunction()">Try it</button>
+
+        <p id="demo"></p>
+
+        <script>
+            function myFunction() {
+                let value = document.getElementById("value").value;
+                let significance = (value <= 0.05) ? "smaller or equal than 0.05. Congratulations it is significant!":"larger than 0.05. Keep going!";
+                document.getElementById("demo").innerHTML = "Your p-value is " + significance;
+            }
+        </script>
+
+    </body>
+</html>
