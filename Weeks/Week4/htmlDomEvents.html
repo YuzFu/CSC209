@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            JS HTML DOM Events
+        </title>
+    </head>
+
+    <body>
+        <h1>Onclick Attribute</h1>
+        <h2>Basic</h2>
+        <p onclick="this.innerHTML='Hello World!'">By clicking...</p>
+
+        <h2>with Function</h2>
+        <p onclick="changeText(this)">Same as above!</p>
+
+        <h1>Onclick Button</h1>
+        <h2>Basic</h2>
+        <button onclick="showDate()">The current second is...</button>
+        <p id="demo"></p>
+
+        <h2>with Function</h2>
+        <button id="clickButton">Same as above!</button>
+        <p id="demo"></p>
+
+        <h1>Oninput / Onchange Attribute</h1>
+        <h2>Automatically capitalized</h2>
+        Enter your name: <input type="text" id="fname" oninput="upperCase()">
+
+        <h1>Onmouseover / Onmousedown Attribute</h1>
+        <div onmouseover="over(this)" onmouseout="out(this)" onmousedown="down(this)" onmouseup="up(this)"
+            style="border: 1px solid; width:50px; height:50px">Text box</div>
+
+        <script>
+            function changeText(id) {
+                id.innerHTML="Hello World!"
+            }
+
+            function showDate() {
+                document.getElementById("demo").innerHTML = new Date().getSeconds();
+            }
+
+            document.getElementById("clickButton") = displayDate;
+
+            function upperCase() {
+                const name = document.getElementById("fname");
+                name.value = name.value.toUpperCase();
+            }
+
+            function over(obj) {
+                obj.innerHTML = "Come over"
+            }
+
+            function out(obj) {
+                obj.innerHTML = "Move out"
+            }
+
+            function down(obj) {
+                obj.innerHTML = "Ouch"
+            }
+
+            function up(obj) {
+                obj.innerHTML = "Pffff"
+            }
+        </script>
+    </body>
+</html>

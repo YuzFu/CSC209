@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            JS HTML DOM Event Listener
+        </title>
+    </head>
+
+    <body>
+        <h1>Multiple Event Handler</h1>
+        <button id="multiple">Multiple Event on this button</button>
+        <button onclick="removeHandler()">Remove</button>
+        <p id="demo"></p>
+        
+        <h1>Window Handler</h1>
+        <h2>Try to resize the window.</h2>
+        <p id="window"></p>
+
+        <script>
+            var x = document.getElementById("multiple")
+            x.addEventListener("mouseover", over);
+            x.addEventListener("mouseout", out);
+            x.addEventListener("mousedown", down);
+            x.addEventListener("mouseup", up);
+
+            function over() {
+                document.getElementById("demo").innerHTML += "Mouse over! <br>"
+            }
+            function out() {
+                document.getElementById("demo").innerHTML += "Mouse out! <br>"
+            }
+            function down() {
+                document.getElementById("demo").innerHTML += "Mouse down! <br>"
+            }
+            function up() {
+                document.getElementById("demo").innerHTML += "Mouse up! <br>"
+            }
+            function removeHandler() {
+                document.getElementById("multiple").removeEventListener("mouseover", over);
+                document.getElementById("multiple").removeEventListener("mouseout", out);
+                document.getElementById("multiple").removeEventListener("mousedown", down);
+                document.getElementById("multiple").removeEventListener("mouseup", up);
+            }
+
+            window.addEventListener("resize", function() {
+                document.getElementById("window").innerHTML = Date();
+            })
+        </script>
+    </body>
+</html>

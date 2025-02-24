@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            JS HTML DOM Nodes
+        </title>
+    </head>
+
+    <body>
+        <div id="div1">
+        <h1>Add new HTML Element</h1>
+        <p id="p1">This is the sibling of h1.</p>
+        <p id="p2">Guess what</p>
+        </div>
+
+        <button onclick="removeElement()">Click to remove the original paragraph</button>
+        <button onclick="replaceElement()">Click to replace the element.</button>
+
+        <script>
+            const newp = document.createElement("p");
+            const newText = document.createTextNode("This is another sibling of h1.")
+            newp.appendChild(newText);
+            document.getElementById("div1").appendChild(newp);
+
+            const firstp = document.createElement("p");
+            const firstText = document.createTextNode("This should be the first sibling.");
+            firstp.appendChild(firstText);
+            const p1 = document.getElementById("p1")
+            document.getElementById("div1").insertBefore(firstp, p1);
+
+            function removeElement() {
+                document.getElementById("p1").remove();
+            }
+
+            const replacep = document.createElement("p");
+            const replaceText = document.createTextNode("This is obviously a sibiling of h1 as well.")
+            replacep.appendChild(replaceText);
+            function replaceElement() {
+                const child = document.getElementById("p2");
+                document.getElementById("div1").replaceChild(replacep, p2);
+            }
+        </script>
+    </body>
+</html>

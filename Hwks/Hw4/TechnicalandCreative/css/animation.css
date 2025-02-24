@@ -1,0 +1,19 @@
+body {
+    padding: 20px;
+}
+#squaresContainer {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    /* background: yellow; */
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.square {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

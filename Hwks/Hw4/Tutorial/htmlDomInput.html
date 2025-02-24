@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            JS HTML DOM Input
+        </title>
+    </head>
+
+    <body>
+        <h1>Input Checkbox Object</h1>
+        <h2>Click on the checkbox to show or hide a picture!</h2>
+        <input type="checkbox" id="toggleCheckbox" onclick="toggleImage()"> Show/Hide Picture
+        <img id="picture" src="https://www.smith.edu/sites/default/files/styles/paragraph_banner_small/public/2023-05/pano0001-pano-edit-2-2.jpg.webp?itok=Pci9f62K" style="display: none;">
+      
+        <h1>Input Search Object</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p>Maecenas molestie leo sit amet justo rhoncus rhoncus.</p>
+        <p>Praesent lobortis turpis eget faucibus elementum.</p>
+        <p>Aenean eu magna non lectus euismod congue.</p>
+        <input type="search" id="mySearch" placeholder="Search for something...">
+        <button onclick="searchField()">Search</button>
+        <p id="demo"></p>
+
+        <h1>Input Radio Object</h1>
+        <h3 id="example">This is an example sentence.</h3>
+        <input type="radio" onclick="color()"> Change color
+        <input type="radio" onclick="size()"> Change size
+        <input type="radio" onclick="background()"> Change background
+
+        <script>
+            function toggleImage() {
+                const img = document.getElementById("picture");
+                img.style.display = (img.style.display === "none") ? "block" : "none";
+            }
+
+            function searchField() {
+                const query = document.getElementById("mySearch").value.toLowerCase();
+                const paragraphs = document.querySelectorAll("p");
+                const output = document.getElementById("demo");
+                
+                output.innerHTML = "";
+
+                for (let i = 0; i < paragraphs.length; i++) {
+                    const para = paragraphs[i];
+                    if(query !== "" && para.textContent.toLowerCase().includes(query)) {
+                        const matchp = document.createElement("p");
+                        matchp.textContent = para.textContent;
+                        output.appendChild(matchp);
+                    }                
+                }
+            }
+
+            function color() {
+                document.getElementById("example").style.color = "yellowgreen";
+            }
+            function size() {
+                document.getElementById("example").style.fontSize = "100px";
+            }
+            function background() {
+                document.getElementById("example").style.backgroundColor = "yellowgreen";
+            }
+        </script>
+    </body>
+</html>

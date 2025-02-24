@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            JS HTML DOM Node Lists
+        </title>
+    </head>
+
+    <body>
+        <p>Quisque aliquet sapien a mi venenatis pharetra.</p>
+        <p>Donec pulvinar felis nec tortor sollicitudin imperdiet.</p>
+        <p>Proin bibendum ipsum vitae suscipit tristique.</p>
+        <p>Sed vel sem tristique, tristique neque eget, sodales felis.</p>
+        <p>Suspendisse fermentum mauris at magna imperdiet tincidunt.</p>
+        <p id="demo"></p>
+        <button onclick="myFunction()">Click</button>
+
+        <script>
+            const myNodeList = document.querySelectorAll("p");
+            document.getElementById("demo").innerHTML = myNodeList[0].innerHTML;
+
+            function myFunction() {
+                for (let i=0; i<=myNodeList.length; i++) {
+                    document.getElementById("demo").innerHTML = myCollection[i].innerHTML;
+                }
+            }
+        </script>
+    </body>
+</html>

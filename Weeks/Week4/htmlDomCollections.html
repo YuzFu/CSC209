@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            JS HTML DOM Collections
+        </title>
+    </head>
+
+    <body>
+        <h1>List of paragraphs</h1>
+        <p>Duis sed mi eu elit lacinia tempor.</p>
+        <p>Morbi at ipsum consectetur, ultrices nisi sit amet, ultrices augue.</p>
+        <p>Donec sodales erat non feugiat tempor.</p>
+        <p id="demo"></p>
+        <button onclick="myFunction()">Click</button>
+
+        <script>
+            const myCollection = document.getElementsByTagName("p");
+            document.getElementById("demo").innerHTML = myCollection[0].innerHTML;
+
+            function myFunction() {
+                for (let i=0; i<=myCollection.length; i++) {
+                    document.getElementById("demo").innerHTML = myCollection[i].innerHTML;
+                }
+            }
+        </script>
+
+    </body>
+</html>
