@@ -46,18 +46,16 @@
             function strikeThrough(checkbox) {
                 let labels = document.getElementsByTagName('label');
                 for (let i = 0; i < labels.length; i++) {
-                    if (labels[i].htmlFor == checkbox.id) {
+                    if (labels[i].htmlFor === checkbox.id) {
                         if (checkbox.checked) {
-                            checkbox.label.style.textDecoration = "line-through";
+                            labels[i].style.textDecoration = "line-through";
                         } else {
-                            checkbox.label.style.textDecoration = "none";
+                            labels[i].style.textDecoration = "none";
                         }
                         break;
                     }   
                 }
             }
         </script>
-
-        <footnote><a href="https://stackoverflow.com/a/285608">Reference</a></footnote>
     </body>
 </html>
