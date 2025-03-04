@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS Canvas</title>
+
+        <style>
+            html {
+                padding:10px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>This is a rectangle filled by darker green</h1>
+        <canvas id="myCanvas" width="200" height="100" style="border:1px solid yellowgreen;"></canvas>
+        
+        <script>
+            const canvas = document.getElementById("myCanvas");
+            const ctx = canvas.getContext("2d");
+            ctx.fillStyle = "green";
+            ctx.fillRect(0,0,150,75);
+        </script>
+
+    </body>
+</html>
+

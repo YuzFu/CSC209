@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Random
+        </title>
+
+        <style>
+            html {
+                padding:10px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Get a random number</h1>
+        <p id="random"></p>
+
+        <h1>Get a random integer</h1>
+        <p id="integer"></p>
+
+        <h1>Get the first number rounded up</h1>
+        <p id="round"></p>
+
+        <script>
+            let x = Math.random();
+            document.getElementById("random").innerHTML = x;
+
+            let y = Math.floor((Math.random() * 100) + 1);
+            document.getElementById("integer").innerHTML = y;
+
+            document.getElementById("round").innerHTML = Math.round(x);
+        </script>
+    </body>
+</html>

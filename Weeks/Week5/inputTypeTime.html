@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Input Type - Time
+        </title>
+
+        <style>
+            html {
+                padding:10px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <form>
+            <label for="datemin">Enter date between the Academic year 24-25:</label>
+            <input type="date" id="academicYear" name="academicYear" min="2024-08-29" max="2025-05-25">
+        </form>
+
+        <form>
+            <label for="birthdaytime">Birthday (date and time):</label>
+            <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+            <br>
+            <label for="month">Birth-month</label>
+            <input type="month" id="bdaymonth" name="bdaymonth">
+            <label for="week">Birth-week</label>
+            <input type="week" id="week" name="week">
+            <label for="time">Birth-time</label>
+            <input type="time" id="appt" name="appt">
+        </form>
+    </body>
+</html>

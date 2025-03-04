@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Canvas Stroke Style
+        </title>
+
+        <style>
+            html {
+                padding:10px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <canvas id="myCanvas" width="500" height="500" style="border:1px solid grey"></canvas>
+
+        <script>
+            const canvas = document.getElementById("myCanvas");
+            const ctx = canvas.getContext("2d");
+
+            ctx.strokeStyle = "red";
+            ctx.lineWidth = 5;
+            ctx.strokeRect(20, 20, 150, 100);
+
+            const gradient = ctx.createLinearGradient(0, 0, 170, 0);
+            gradient.addColorStop("0", "MediumAquaMarine");
+            gradient.addColorStop("0.5", "MintCream");
+            gradient.addColorStop("1.0", "MistyRose");
+            ctx.strokeStyle = gradient;
+            ctx.lineWidth = 5;
+            ctx.strokeRect(40, 50, 500, 400);
+
+            ctx.font = "50px Garamond"
+            const textGradient = ctx.createLinearGradient(0, 0, canvas.width, 0);
+            textGradient.addColorStop("0", "FireBrick");
+            textGradient.addColorStop("0.5", "FloralWhite");
+            textGradient.addColorStop("1.0", "ForestGreen");
+            ctx.strokeStyle = textGradient;
+            ctx.strokeText("Gradient Text!", 200, 300);
+
+        </script>
+    </body>
+</html>

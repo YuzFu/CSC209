@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Canvas Circle
+        </title>
+
+        <style>
+            html {
+                padding:10px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <canvas id="myCanvas" width="500" height="500" style="border:1px solid #000000;"></canvas>
+
+        <script>
+            const canvas = document.getElementById("myCanvas");
+            const ctx = canvas.getContext("2d");
+            
+            ctx.beginPath();
+            ctx.arc(95, 50, 40, 0, 2 * Math.PI);
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.arc(150, 250, 35, 0, 2 * Math.PI);
+            ctx.fillStyle = "green";
+            ctx.fill();
+            ctx.lineWidth = 10;
+            ctx.strokeStyle = "lightgreen";
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.arc(350, 320, 50, 0, Math.PI);
+            ctx.fillStyle = "blue";
+            ctx.fill();
+            ctx.lineWidth = 5;
+            ctx.strokeStyle = "pink";
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.arc(430, 100, 50, 0.5 * Math.PI, 1.5 * Math.PI);
+            ctx.fillStyle = "orange";
+            ctx.fill();
+            ctx.lineWidth = 1;
+            ctx.strokeStyle = "yellow";
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.arc(430, 100, 50, 1.5 * Math.PI, 0.5 * Math.PI);
+            ctx.fillStyle = "purple";
+            ctx.fill();
+            ctx.lineWidth = 3;
+            ctx.strokeStyle = "red";
+            ctx.stroke();
+        </script>
+    </body>
+</html>

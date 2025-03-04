@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Current URL
+        </title>
+
+        <style>
+            html {
+                padding:10px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <p id="url"></p>
+
+        <p id="date"></p>
+
+        <p id="size"></p>
+
+        <script>
+        document.getElementById("url").innerHTML = 
+        "The full URL of this page is: " + window.location.href;
+
+        const d = new Date();
+        document.getElementById("date").innerHTML = d;
+
+        var w = window.innerWidth;
+        var h = window.innerHeight;
+        document.getElementById("size").innerHTML = "The current screen size is: " + w +' for width and ' + h + " for height."
+
+        </script>
+
+    </body>
+</html>

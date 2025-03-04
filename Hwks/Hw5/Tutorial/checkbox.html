@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Checkbox
+        </title>
+
+        <style>
+            html {
+                padding:10px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>HW 5 Technical Part Checklist</h1>
+
+        <input type="checkbox" onclick="strikeThrough(this)" id="level1">
+        <label for="level1">Level 1: Using Javascript graphics (canvas), draw a scene with one point (drawn as a little disk) together with a vector (shown as a short line segment or arrow) out of it representing a direction and speed with which we'd like the point to move. </label><br>
+
+        <input type="checkbox" onclick="strikeThrough(this)" id="level2">
+        <label for="level2">Level 2: Extend to three points, colored differently.</label><br>
+
+        <input type="checkbox" onclick="strikeThrough(this)" id="level3">
+        <label for="level3">Level 3: Add one button  for generating new random locations for the three points.</label><br>
+
+        <input type="checkbox" onclick="strikeThrough(this)" id="level4">
+        <label for="level4">Level 4: Extend to an arbitrary number of points (each one with its own velocity vector and a different color). The nr of points is given as a global variable NRPTS in javascript located in the main html file. The button introduced at level 3 is used to generate random positions and velocities for the points.</label><br>
+
+        <input type="checkbox" onclick="strikeThrough(this)" id="level5">
+        <label for="level5">Level 5: Extend Level 3 with an Animation (building upon work done in Hw4, but adapted to use canvas Graphics rather than html-only squares) and animate the motion of the points, with their given velocities, for a fixed number NRSTEPS of steps.</label><br>
+
+        <input type="checkbox" onclick="strikeThrough(this)" id="level6">
+        <label for="level6">Level 6: Generalize Levels 4 and 5 to animate the motion of an arbitrary number of moving points.</label><br>
+
+        <input type="checkbox" onclick="strikeThrough(this)" id="level7">
+        <label for="level7">Level 7: Add an Input field where the user can enter the desired number n of points. Then your javacode will generate a random collection of coordinates for the n points.</label><br>
+
+        <input type="checkbox" onclick="strikeThrough(this)" id="level8">
+        <label for="level8">Level 8: Add a button to reset the animation (i.e. move the points back to their original positions at the first step of the animation). You will reset using the last generated positions for the points and velocities.</label><br>
+
+        <input type="checkbox" onclick="strikeThrough(this)" id="level9">
+        <label for="level9">Level 9: Add a checkbox which tells the animation to either keep a trace of the intermediate positions of all the points, or not (i.e. to show only their last, current point positions).</label><br>
+
+        <script>
+            function strikeThrough(checkbox) {
+                let labels = document.getElementsByTagName('label');
+                for (let i = 0; i < labels.length; i++) {
+                    if (labels[i].htmlFor == checkbox.id) {
+                        if (checkbox.checked) {
+                            checkbox.label.style.textDecoration = "line-through";
+                        } else {
+                            checkbox.label.style.textDecoration = "none";
+                        }
+                        break;
+                    }   
+                }
+            }
+        </script>
+
+        <footnote><a href="https://stackoverflow.com/a/285608">Reference</a></footnote>
+    </body>
+</html>
