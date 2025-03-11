@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            HW 6 Game Of Life
+        </title>
+
+        <link id="stylesheet" rel="stylesheet" href="css/game.css">
+
+    </head>
+
+    <body>
+        <h1 id="generation"></h1>
+        <canvas id="c"></canvas>
+        <div class="container">
+            <div>
+                <button id="startStop" onclick="startStop()" >Start</button>
+                <button id="next" onclick="nextGeneration()">Next</button>
+                <br>
+                <button id="reset" onclick="resetGrid()">Reset</button>
+                <button id="save" onclick="saveGrid()">Save</button>
+                <br>
+                <button id="clear" onclick="initializeGrid(false)">Clear</button>
+                <button id="random" onclick="initializeGrid()">Random</button>
+                
+            </div>
+            <div>
+                <label>Speed</label>
+                <input type="range" id="speed" value="5" min="1" max="10">
+                <br>
+                <label>Tile Size</label>
+                <input type="range" id="tile" value="10" min="1" max="20">
+                <br>
+                <label>Column</label>
+                <input type="number" id="cols" value="50" min="1" max="100">
+                <label>Row</label>
+                <input type="number" id="rows" value="50" min="1" max="100">
+            </div>
+            <div>
+                <label for="favcolor">Live Color</label>
+                <input type="color" id="live" value="#000000">
+                <br>
+                <label for="favcolor">Dead color</label>
+                <input type="color" id="dead" value="#ffffff">
+                <br>
+                <label for="favcolor">Grid Color</label>
+                <input type="color" id="grid" value="#f0f0f0">
+            </div>
+        </div>
+
+        <footnote>
+            <a href="https://stackoverflow.com/questions/63907209/how-to-draw-shapes-to-a-canvas-witha-2d-array">How to draw shapes to a canvas with a 2d array</a>
+            <br>
+            <a href="https://www.youtube.com/watch?v=qQO-9WppZ1w">HTML Canvas - Clickable Grid</a>
+            <br>
+            <a href="https://stackoverflow.com/questions/31579700/how-to-make-a-single-button-act-as-a-start-and-stop-button-in-javascript">How to make a single button act as a start and stop button in javascript</a>
+            <br>
+            <a href="https://stackoverflow.com/a/50300880">Downloading canvas element to an image</a>
+        </footnote>
+
+        <script src="js/game.js"></script>
+    </body>
+</html>
+
+

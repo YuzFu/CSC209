@@ -111,34 +111,3 @@ function startAll() {
         moveSq(sq.id, sq.speedId);
     });
 }
-
-// template and commendation fo red square
-// // movement of red square
-// function moveRed()
-// {   
-//     // get the red square element
-//     var redSquare = document.getElementById("redSq");  
-//     // set timer for red square 
-//     var redPos = 0;
-//     var speed = redSpeed();
-//     // call the stepRed function every 10 ms until clearInterval is called after 350 ms
-//     var stepRedId = setInterval(stepRed, speed);
-
-//     // step of red square
-//     function stepRed() {
-//         // stop moving if the time is up
-//         if (redPos == 350) {
-//             clearInterval(stepRedId);
-//         } else {
-//             // keep the timer, move the square both horizontally and vertically
-//             redPos++; 
-//             redSquare.style.top = redPos + 'px'; 
-//             redSquare.style.left = redPos + 'px';
-//         }
-//     }
-// }
-
-// function redSpeed() {
-//     const speed = document.getElementById("redSpeed").value;
-//     return speed;
-// }

@@ -1,0 +1,122 @@
+* {box-sizing:border-box}
+
+body {
+  background: url(../images/scmap.png);
+  background-size: 100% auto;
+  background-color: rgba(38, 35, 36, 0.8);
+  background-blend-mode: darken;
+  background-repeat: no-repeat;
+  position: relative;
+  font-family: Garamond, serif;
+}
+
+header {
+  background-color: #F2A516;
+  color: #262324;
+  text-align: center;
+  padding: 10px;
+}
+
+.logo {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+a {
+  color: #F2F2F2; 
+}
+
+a:visited {
+  color: #48B0D9;
+}
+
+nav {
+  display: flex;
+  align-items: center;  /* Aligns items vertically */
+  background-color: #1FBF92;
+  width: 100%;
+}
+
+nav a {
+  text-align: center;
+  text-decoration: none;
+  color: #262324;
+  padding: 10px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #94D79B;
+  color: #262324;
+}
+
+nav a.active {
+  background-color: #D4EAA6;
+  color: #262324;
+}
+
+.nav-buttons {
+  margin-left: auto;
+  display: flex;
+  gap: 10px;
+  font-family: Garamond, serif;
+  padding-right: 10px;
+}
+
+.nav-buttons button {
+  background-color: #1FBF92;
+  border-color: #94D79B;
+  color: #1B3059;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.nav-buttons button:hover {
+  background-color: #94D79B;
+  color: #1B3059;
+}
+
+button {
+  font-family: Garamond, serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  width: 100%;
+  padding: 10px;
+}
+
+.container > div {
+  width: 100%; 
+  padding: 10px;
+}
+
+table {
+  width: 100%; 
+  border-collapse: collapse; 
+  color: #F2F2F2;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #1B3059;
+}
+
+td {
+  background-color: rgba(27, 48, 59, 0.2);
+}
+
+h2 {
+  text-align: center;
+  color: #F2F2F2;
+}
+
+footer {
+  padding: 10px;
+  color:#F2F2F2;
+}

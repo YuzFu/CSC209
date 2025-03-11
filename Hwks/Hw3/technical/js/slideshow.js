@@ -9,18 +9,22 @@ const TEMPLATE = `<div class="mySlides fade">
                     <div class="text">TEXT</div>
                 </div>`;
 
-let slidesHTML = "";
+function createSlides() {
+    let slidesHTML = "";
 
-for (let i = 0; i < number.length; i++) {
-    let slideContent = TEMPLATE
-        .replace("NUMBER", number[i])
-        .replace("IMAGE", image[i])
-        .replace("TEXT", text[i]);
+    for (let i = 0; i < number.length; i++) {
+        let slideContent = TEMPLATE
+            .replace("NUMBER", number[i])
+            .replace("IMAGE", image[i])
+            .replace("TEXT", text[i]);
 
-    slidesHTML += slideContent;
+        slidesHTML += slideContent;
+    }
+
+    document.getElementById("slides").innerHTML = slidesHTML;
 }
 
-document.getElementById("slides").innerHTML = slidesHTML;
+createSlides();
 
 // Slideshow control
 let slideIndex = 1;
@@ -51,6 +55,5 @@ function showSlides(n) {
     }
     slides[slideIndex-1].style.display = "block";
     dots[slideIndex-1].className += " active";
-    timer = setTimeout(showSlides, 2000);
+    timer = setTimeout(() => showSlides(slideIndex + 1), 2000);
 }
-

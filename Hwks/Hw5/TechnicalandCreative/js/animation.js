@@ -91,7 +91,9 @@ function movePoint() {
 }
 
 function resetPoint() {
-    for (i = 0; i < disks.length; i++) {
+    ctx.clearRect(0, 0, c.width, c.height);
+
+    for (let i = 0; i < disks.length; i++) {
         disks[i].x = initialDisks[i].x;
         disks[i].y = initialDisks[i].y;
         disks[i].dx = initialDisks[i].dx;
@@ -110,4 +112,4 @@ function stopPoint() {
     }
 }
 
-initializePoint();
+window.onload(initializePoint())

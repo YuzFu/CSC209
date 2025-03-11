@@ -1,0 +1,108 @@
+* {box-sizing: border-box;}
+
+body {
+  background: url(../images/scmap.png);
+  background-size: 100% auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  background-blend-mode: lighten;
+  background-repeat: no-repeat;
+  position: relative;
+  font-family: Garamond, serif;
+}
+
+header {
+  background-color: #1B3059;
+  color: #F2F2F2;
+  text-align: center;
+  padding: 10px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  background-color: #9D5453;
+  width: 100%;
+}
+
+nav a {
+  text-align: center;
+  text-decoration: none;
+  color: #F2F2F2;
+  padding: 10px;
+}
+
+nav a:hover {
+  background-color: #843542;
+  color: #F2F2F2;
+}
+
+nav a.active {
+  background-color: #620525;
+  color: #F2F2F2;
+}
+
+.nav-buttons {
+  margin-left: auto;
+  display: flex;
+  gap: 10px;
+  font-family: Garamond, serif;
+  padding-right: 10px;
+}
+
+.nav-buttons button {
+  background-color: #9D5453;
+  border-color: #843542;
+  color: #F2F2F2;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.nav-buttons button:hover {
+  background-color: #843542;
+  color: #F2F2F2;
+}
+
+button {
+  font-family: Garamond, serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+}
+
+.container > div {
+  width: 100%; 
+  padding: 10px;
+}
+
+h2 {
+  text-align: center;
+  color: #1B3059;
+}
+
+table {
+  width: 100%; 
+  border-collapse: collapse; 
+  color: #1B3059;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #FEBD11;
+}
+
+td {
+  background-color: rgba(242, 242, 242, 0.8);
+}
+
+footer {
+  padding: 10px;
+}
