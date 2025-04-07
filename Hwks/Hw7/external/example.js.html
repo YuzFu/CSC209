@@ -1,0 +1,59 @@
+<html>
+<head>
+	<script>
+		
+		const WEEK ="<h1>Week NRWEEK<h1>";
+		const DATE ="<h2>DATE</h2>";
+		const TOPIC ="<h3>TOPIC</h3>";
+		const DESCRIPTION ="<h4>DESCR</h4>";
+				
+		// Template for a single week:
+		// const TEMPLATE = "<div>" + ONEWEEK +"</div>";
+		
+		// with:
+		// const ONEWEEK = WEEK + DATE + TOPIC + DESCRIPTION;
+		
+	</script>
+		
+	<script>
+		const LISTDATES =[
+			"Feb 1","Feb 8","Feb 15","Feb 21",
+			"March 1","March 8","March 15","March 21",
+			"April 1","April 8","April 15","April 21"
+		];
+		const LISTTOPICS=[
+			"Installation",
+			"Html",
+			"Css",
+			"Javascript 1",
+			"","","","","","","",""];
+		const LISTDESCRIPTIONS=[
+			"We install software","We make our first Html",
+			"We style pages with Css",
+			"Get started on Javascript ",
+			"","","","","","","","",""];
+		
+		const NRWEEKS=LISTDATES.length;
+		// alert("NRWEEKS="+NRWEEKS);
+	</script>	
+</head>
+<body>
+
+	
+<script>
+	
+	for (let i=1; i<= NRWEEKS; i++){
+		var crtWeekTitle = WEEK.replace("NRWEEK","" + i);
+		// alert("crtWeekTitle="+crtWeekTitle);
+		var crtWeekDate = DATE.replace("DATE",LISTDATES[i-1]);
+		var crtWeekTopic = TOPIC.replace("TOPIC",LISTTOPICS[i-1]);
+		var crtWeekDescr = DESCRIPTION.replace("DESCR",LISTDESCRIPTIONS[i-1]);
+		
+		var oneWeekBody = crtWeekTitle + crtWeekDate + crtWeekTopic + crtWeekDescr;
+		
+		document.getElementsByTagName("body")[0].innerHTML += oneWeekBody;
+	}
+		
+</script>
+</body>
+</html>

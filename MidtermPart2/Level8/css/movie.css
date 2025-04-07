@@ -1,0 +1,11 @@
+html {
+    padding:10px;
+}
+
+body, button, label, select {
+    font-family:'Courier New', Courier, monospace;
+}
+
+label {
+    font-weight: bold;
+}

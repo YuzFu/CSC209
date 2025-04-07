@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            JS Array
+        </title>
+    </head>
+
+    <body>
+        <h1>The forEach() Method</h1>
+
+        <p>Listing all chinese zodiac signs:</p>
+
+        <p id="demo"></p>
+
+        <script>
+        const zodiac = ["Rat", "Ox", "Tiger", "Rabbit", "Dragon", "Snake", "Horse", "Goat", "Monkey", "Rooster", "Dog", "Pgi"];
+
+        let text = "<ul>";
+        zodiac.forEach(myFunction);
+        text += "</ul>";
+
+        document.getElementById("demo").innerHTML = text;
+
+        function myFunction(value) {
+        text += "<li>" + value + "</li>";
+        } 
+        </script>
+    </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HW5 - Animation</title>
+        <link id="stylesheet" rel="stylesheet" href="../css/movie.css">
+    </head>
+
+    <body>
+        <label for="NRPTS">Number of Points:</label>
+        <input type="number" id="NRPTS" name="NRPTS" min="1" max="2500" value="10">
+        <button id="initPoints">Submit</button>
+
+        <label for="NRSTEPS">Number of Steps (0 for Nonstop):</label>
+        <input type="number" id="NRSTEPS" name="NRSTEPS" min="0" max="2500" value="10">
+
+        <br>
+        <label for="temperature">Temperature</label>
+        <select id="velocity">
+            <option value="10">High</option>
+            <option value="20">Medium</option>
+            <option value="30">Low</option>
+        </select>
+
+        <label for="trace">Trace</label>
+        <input type="checkbox" id="trace" name="trace" value="Trace">
+
+        <button id="animate">ANIMATE</button>
+        <button id="stop">STOP</button>
+        <button id="reset">RESET</button>
+        <button id="generateRandom">GENERATE RANDOM LOCATION & VELOCITIES</button>
+
+        <br><br>
+        <canvas id="myCanvas" width="500" height="500" style="border:1px solid #000000;"></canvas>
+
+        <footnote>
+            <br>
+            <a href="https://stackoverflow.com/a/5365036">Source</a>
+            <br>
+            <a href="iconBar.html">Back to Icon Bar</a>
+        </footnote>
+        
+        <script src="../js/movie.js"></script>
+    </body>
+</html>

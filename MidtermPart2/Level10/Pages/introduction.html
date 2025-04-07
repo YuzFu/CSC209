@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            JS Introduction
+        </title>
+    </head>
+
+    <body>
+        <h1 id="content">Change Content</h1>
+        <button type="button" onclick='document.getElementById("content").innerHTML = "Hello JavaScript!"'>Try it!</button>
+
+        <h1>Change HTML Attribute Values</h1>
+        <button onclick="document.getElementById('myImage').src='https://www.smith.edu/sites/default/files/styles/node_news_article_header_image_small_large/public/2024-01/snow_lyman_conservatory.jpg.webp?itok=0dP2iCr_'">Winter</button>
+        <p><img id="myImage" src="https://archive.smith.edu/sites/default/files/styles/img-explore-fpo/public/media/Callouts/college-hall-offices-696.jpg?itok=J-O8tr2U"></p>
+        <button onclick="document.getElementById('myImage').src='https://www.smith.edu/sites/default/files/styles/node_news_article_header_image_small_large/public/media/-news/people%20news/summer-garden-1000.jpg.webp?itok=vVXk_Svm'">Summer</button>
+
+        <h1 id="style">Change HTML Styles (CSS)</h1>
+        <button type="button" onclick="document.getElementById('style').style.fontSize='35px'">Try it!</button>
+
+        <h1 id="hide">Hide HTML Elements</h1>
+        <button type="button" onclick="document.getElementById('hide').style.display='none'">Hide!</button>
+
+        <h1 id="show" style="display:none">Show HTML Elements</h1>
+        <button type="button" onclick="document.getElementById('show').style.display = 'block'">Show!</button>
+
+    </body>
+</html>

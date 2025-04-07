@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            JS HTML DOM Get
+        </title>
+    </head>
+
+    <body>
+        <h1>Id</h1>
+        <h2>getElementById is a method while innerHTML is a property</h2>
+        <p id="id"></p>
+
+        <h1>Tag Name</h1>
+        <h2>This section prints out the second h1 heading. </h2>
+        <p id="tagName"></p>
+
+        <h1>Class Name</h1>
+        <h2 class="h2">This section extracts the first element of a specific class. </h2>
+        <p id="className"></p>
+
+        <h1>Change element by Id</h1>
+        <h2>The sentence below is changed.</h2>
+        <p id="id_change">Unchanged.</p>
+
+        <h1>Change value of an attribute</h1>
+        <h2>The image below is changed as well.</h2>
+        <img id="image_change" src="https://apply-smith-edu.cdn.technolutions.net/www/images/Campus%20Images/AerialCampusCenter%26Campus_DJI_0097-Med%20(1)_CROPPED.jpg" width = 50%>
+
+        <h1>Dynamic HTML content</h1>
+        <h2>The next line print out the current second.</h2>
+        <p id="dynamic"></p>
+
+        <h1>Changing CSS with Events</h1>
+        <h2>Click on the button and see what has changed!</h2>
+        <button id="css_events" type="button" onclick="document.getElementById('css_events').style.color = 'yellowgreen'">BUTTON</button>
+
+        <script>
+            document.getElementById("id").innerHTML = "Hello World!";
+
+            const h_1 = document.getElementsByTagName("h1")
+            document.getElementById("tagName").innerHTML = h_1[1].innerHTML;
+
+            const h_2 = document.getElementsByClassName("h2")
+            document.getElementById("className").innerHTML = h_2[0].innerHTML;
+
+            document.getElementById("id_change").innerHTML = "Changed!";
+
+            document.getElementById("image_change").src = "https://archive.smith.edu/sites/default/files/styles/img-explore-fpo/public/media/Callouts/college-hall-offices-696.jpg?itok=J-O8tr2U";
+
+            document.getElementById("dynamic").innerHTML = new Date().getSeconds();
+        </script>
+    </body>
+</html>

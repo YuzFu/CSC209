@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            CSS Flexbox
+        </title>
+
+        <style>
+            html {
+                padding:10px;
+            }
+
+            .flex-container-row {
+                display: flex;
+                flex-direction: row;
+                background-color: yellowgreen;
+            }
+            
+            .flex-container-row > div {
+                background-color: greenyellow;
+                margin: 10px;
+                text-align: center;
+            }
+
+            .flex-container-column {
+                display: flex;
+                flex-direction: column;
+                background-color: yellowgreen;
+            }
+            
+            .flex-container-column > div {
+                background-color: greenyellow;
+                margin: 10px;
+                text-align: center;
+                line-height: 75px;
+            }
+
+            .flex-container-row-reverse {
+                display: flex;
+                flex-direction: row-reverse;
+                background-color: yellowgreen;
+            }
+            
+            .flex-container-row-reverse > div {
+                background-color: greenyellow;
+                margin: 10px;
+                text-align: center;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>The flex-direction Property</h1>
+        <h2>Row</h2>
+
+        <div class="flex-container-row">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>  
+        </div>
+
+        <h2>Row Reversed</h2>
+        <div class="flex-container-row-reverse">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>  
+        </div>
+
+        <h2>Column</h2>
+        <div class="flex-container-column">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>  
+        </div>
+
+    </body>
+</html>

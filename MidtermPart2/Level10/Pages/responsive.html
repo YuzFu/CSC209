@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            HTML Responsive
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <h1>Responsive Images</h1>
+        <h2>Width Property</h2>
+        <p><img src="https://archive.smith.edu/sites/default/files/styles/img-explore-fpo/public/media/Callouts/college-hall-offices-696.jpg?itok=J-O8tr2U" style="width:100%;"></p>
+        
+        <h2>Max-width Property</h2>
+        <p><img src="https://archive.smith.edu/sites/default/files/styles/img-explore-fpo/public/media/Callouts/college-hall-offices-696.jpg?itok=J-O8tr2U" style="max-width:100%;height:auto;"></p>
+        
+        <h1>Show Different Images Depending on Browser Width</h1>
+        <picture>
+            <source srcset="https://archive.smith.edu/sites/default/files/styles/img-explore-fpo/public/media/Callouts/college-hall-offices-696.jpg?itok=J-O8tr2U" media="(max-width: 600px)">
+            <source srcset="https://static01.nyt.com/images/2021/02/24/us/24SmithCollege1/24SmithCollege1-videoSixteenByNine3000-v2.jpg?year=2021&h=1688&w=3000&s=6af1baa3af935047d0fbd2636712f17905a817043d4f10cac34bdab890368078&k=ZQJBKqZ0VN&tw=1" media="(max-width: 1500px)">
+            <source srcset="https://www.smith.edu/sites/default/files/styles/content_teaser_landscape_large/public/media/Office%20Images/pagetop_botanic_garden.png.webp?itok=EgnMyPGS">
+            <img src="https://archive.smith.edu/sites/default/files/styles/img-explore-fpo/public/media/Callouts/college-hall-offices-696.jpg?itok=J-O8tr2U" alt="Flowers">
+          </picture>
+        
+        <h1 style="font-size:10vw">Responsive Text Size</h1>
+        
+    </body>
+</html>

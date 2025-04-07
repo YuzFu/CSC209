@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+  <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link id="stylesheet" rel="stylesheet" href="css/stylesheet.css">
+
+  </head>
+
+  <body>
+
+    <h2>Comparison Table</h2>
+    <p>
+      The role of the &ltlink&gt tag in the head works for external css files. It connects to the css file and contribute to the style of the html document. 
+      In this page, for example, the stylesheet.css file determines the format of the table below, including the border and width of the table, the text align and background color of the rows, as well as the colors of the checks.
+    </p>
+
+    <table>
+      <tr>
+        <th style="width:50%">Name</th>
+        <th>Part 1</th>
+        <th>Part 2</th>
+      </tr>
+      <tr>
+        <td>Sample text</td>
+        <td><i class="fa fa-remove"></i></td>
+        <td><i class="fa fa-check"></i></td>
+      </tr>
+      <tr id="testRow"></tr>
+      
+    </table>
+
+    <!-- The javascript code is in the external file -->
+    <script src="js/table.js"></script> 
+  </body>
+</html>

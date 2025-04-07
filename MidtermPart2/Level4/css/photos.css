@@ -1,0 +1,177 @@
+* {box-sizing:border-box}
+
+body {
+  background: url(../images/scmap.png);
+  background-size: 100% auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  background-blend-mode: lighten;
+  background-repeat: no-repeat;
+  position: relative;
+  font-family: Garamond, serif;
+}
+
+header {
+  background-color: #1B3059;
+  color: #F2F2F2;
+  text-align: center;
+  padding: 10px;
+}
+
+nav {
+  display: flex;
+  align-items: center;  /* Aligns items vertically */
+  background-color: #9D5453;
+  width: 100%;
+}
+
+nav a {
+  text-align: center;
+  text-decoration: none;
+  color: #F2F2F2;
+  padding: 10px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #843542;
+  color: #F2F2F2;
+}
+
+nav a.active {
+  background-color: #620525;
+  color: #F2F2F2;
+}
+
+.nav-buttons {
+  margin-left: auto;
+  display: flex;
+  gap: 10px;
+  font-family: Garamond, serif;
+  padding-right: 10px;
+}
+
+.nav-buttons button {
+  background-color: #9D5453;
+  border-color: #843542;
+  color: #F2F2F2;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.nav-buttons button:hover {
+  background-color: #843542;
+  color: #F2F2F2;
+}
+
+button {
+  font-family: Garamond, serif;
+}
+
+.container {
+  display: flex;
+  padding: 10px;
+}
+
+.container > div {
+  width:50%;
+  padding: 10px;
+}
+
+h2 {
+  text-align: center;
+  color: #1B3059;
+}
+
+table {
+  color: #1B3059;
+}
+
+th {
+  background-color: #FEBD11;
+  padding: 10px;
+}
+
+td {
+  background-color: rgba(242, 242, 242, 0.8);
+  padding: 10px;
+  text-align: center;
+}
+
+.slideshow-container {
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+.mySlides img {
+  width: 100%;
+  height: auto;
+  display: block; 
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 10px;
+  color: #F2F2F2;
+  transition: 0.8s ease;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(27,48,59,0.8);
+}
+
+.text {
+  color: #1B3059;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: -70px;
+  font-size: 20px;
+}
+
+.numbertext {
+  color: #F2F2F2;
+  padding: 10px;
+  position: absolute;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 10px;
+  background-color: rgba(38, 35, 36, 0.4);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.8s ease;
+}
+
+.active, .dot:hover {
+  background-color: #262324;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+footer {
+  padding: 10px;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
