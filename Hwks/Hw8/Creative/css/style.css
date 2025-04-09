@@ -1,9 +1,27 @@
 html {
   padding: 10px;
+  background-color: lightyellow;
 }
 
 body {
-  width: 50%
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header {
+  text-align: center;
+  padding-bottom: 20px;
+  position: relative;
+}
+  
+header h1 {
+  color: #1B3059;
+}
+
+.header-img {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  max-width: 100px;
 }
 
 .slideshow-container {
@@ -24,6 +42,7 @@ body {
   width: 100%;
   height: auto;
   display: block; 
+  padding-top: 10px;
 }
 
 .prev, .next {
@@ -84,10 +103,6 @@ body {
 .fade {
   animation-name: fade;
   animation-duration: 1.5s;
-}
-
-footer {
-  padding: 10px;
 }
 
 @keyframes fade {

@@ -5,11 +5,7 @@
             Level 1
         </title>
 
-        <style>
-            html {
-                padding:10px;
-            }
-        </style>
+        <link rel="stylesheet" href="css/style.css">
     </head>
 
     <body>

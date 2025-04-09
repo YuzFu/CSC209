@@ -2,21 +2,17 @@
 <html>
     <head>
         <title>
-            Level 1
+            Level 2
         </title>
 
-        <style>
-            html {
-                padding:10px;
-            }
-        </style>
+        <link rel="stylesheet" href="css/style.css">
     </head>
 
     <body>
         <?php
         $image_arr = glob("images/*");
         foreach ($image_arr as $image) {
-            echo "<img src='$image', style='width:100%''>";
+            echo "<img src='$image' style='width:100%''>";
         }
 
         ?>

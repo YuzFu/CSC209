@@ -1,29 +1,3 @@
-const TEMPLATE = `<div class="mySlides fade">
-                    <div class="numbertext">NUMBER</div>
-                    <img src="IMAGE">
-                    <div class="text">TEXT</div>
-                    </div>`;
-
-function createSlides() {
-    let slidesHTML = "";
-    let dotsHTML = "";
-
-    for (let i = 0; i < slidesData.length; i++) {
-        const slide = TEMPLATE
-            .replace("NUMBER", `${i + 1} / ${slidesData.length}`)
-            .replace("IMAGE", slidesData[i].src)
-            .replace("TEXT", slidesData[i].caption);
-
-        slidesHTML += slide;
-        dotsHTML += `<span class="dot" onclick="currentSlide(${i + 1})"></span>`;
-    }
-
-    document.getElementById("slides").innerHTML = slidesHTML;
-    document.getElementById("dots").innerHTML = dotsHTML;
-}
-
-createSlides();
-
 // Slideshow Logic
 let slideIndex = 1;
 let timer = null;
