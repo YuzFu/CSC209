@@ -1,0 +1,162 @@
+[
+    {
+        "name": "Comstock House",
+        "url": "https:\/\/www.smith.edu\/your-campus\/residence-life\/smith-houses\/garden-neighborhood\/comstock-house"
+    },
+    {
+        "name": "Gardiner House",
+        "url": "https:\/\/www.smith.edu\/your-campus\/residence-life\/smith-houses\/garden-neighborhood\/gardiner-house"
+    },
+    {
+        "name": "Haven\/Wesley House",
+        "url": "https:\/\/www.smith.edu\/your-campus\/residence-life\/smith-houses\/garden-neighborhood\/havenwesley"
+    },
+    {
+        "name": "Haynes House",
+        "url": "https:\/\/www.smith.edu\/your-campus\/residence-life\/smith-houses\/garden-neighborhood\/haynes-house"
+    },
+    {
+        "name": "Morrow House",
+        "url": "https:\/\/www.smith.edu\/your-campus\/residence-life\/smith-houses\/garden-neighborhood\/morrow-house"
+    },
+    {
+        "name": "Sessions Complex",
+        "url": "https:\/\/www.smith.edu\/your-campus\/residence-life\/smith-houses\/garden-neighborhood\/sessions-complex"
+    },
+    {
+        "name": "Wilson House",
+        "url": "https:\/\/www.smith.edu\/your-campus\/residence-life\/smith-houses\/garden-neighborhood\/wilson-house"
+    },
+    {
+        "name": "Lee House",
+        "url": "https:\/\/www.smith.edu\/your-campus\/residence-life\/smith-houses\/ivy-neighborhood\/lee-house"
+    },
+    {
+        "name": "Albright House",
+        "url": "https:\/\/www.smith.edu\/your-campus\/residence-life\/smith-houses\/ivy-neighborhood\/albright-house"
+    },
+    {
+        "name": "Baldwin House",
+        "url": "https:\/\/www.smith.edu\/your-campus\/residence-life\/smith-houses\/ivy-neighborhood\/baldwin-house"
+    },
+    {
+        "name": "Chapin House",
+        "url": "https:\/\/www.smith.edu\/your-campus\/residence-life\/smith-houses\/ivy-neighborhood\/chapin-house"
+    },
+    {
+        "name": "Duckett House",
+        "url": "https:\/\/www.smith.edu\/your-campus\/residence-life\/smith-houses\/ivy-neighborhood\/duckett-house"
+    },
+    {
+        "name": "Hubbard House",
+        "url": "https:\/\/www.smith.edu\/your-campus\/residence-life\/smith-houses\/ivy-neighborhood\/hubbard-house"
+    },
+    {
+        "name": "Lawrence House",
+        "url": "https:\/\/www.smith.edu\/your-campus\/residence-life\/smith-houses\/ivy-neighborhood\/lawrence-house"
+    },
+    {
+        "name": "Morris House",
+        "url": "https:\/\/www.smith.edu\/your-campus\/residence-life\/smith-houses\/ivy-neighborhood\/morris-house"
+    },
+    {
+        "name": "Tyler House",
+        "url": "https:\/\/www.smith.edu\/your-campus\/residence-life\/smith-houses\/ivy-neighborhood\/tyler-house"
+    },
+    {
+        "name": "Washburn House",
+        "url": "https:\/\/www.smith.edu\/your-campus\/residence-life\/smith-houses\/ivy-neighborhood\/washburn-house"
+    },
+    {
+        "name": "Capen House",
+        "url": "https:\/\/www.smith.edu\/your-campus\/residence-life\/smith-houses\/mountain-neighborhood\/capen-house"
+    },
+    {
+        "name": "Cutter House",
+        "url": "https:\/\/www.smith.edu\/your-campus\/residence-life\/smith-houses\/mountain-neighborhood\/cutter-house"
+    },
+    {
+        "name": "Gillett House",
+        "url": "https:\/\/www.smith.edu\/your-campus\/residence-life\/smith-houses\/mountain-neighborhood\/gillett-house"
+    },
+    {
+        "name": "Lamont House",
+        "url": "https:\/\/www.smith.edu\/your-campus\/residence-life\/smith-houses\/mountain-neighborhood\/lamont-house"
+    },
+    {
+        "name": "Northrop House",
+        "url": "https:\/\/www.smith.edu\/your-campus\/residence-life\/smith-houses\/mountain-neighborhood\/northrop-house"
+    },
+    {
+        "name": "Parsons House",
+        "url": "https:\/\/www.smith.edu\/your-campus\/residence-life\/smith-houses\/mountain-neighborhood\/parsons-house"
+    },
+    {
+        "name": "Talbot House",
+        "url": "https:\/\/www.smith.edu\/your-campus\/residence-life\/smith-houses\/mountain-neighborhood\/talbot-house"
+    },
+    {
+        "name": "Ziskind House",
+        "url": "https:\/\/www.smith.edu\/your-campus\/residence-life\/smith-houses\/mountain-neighborhood\/ziskind-house"
+    },
+    {
+        "name": "Cushing House",
+        "url": "https:\/\/www.smith.edu\/your-campus\/residence-life\/smith-houses\/paradise-neighborhood\/cushing-house"
+    },
+    {
+        "name": "Emerson House",
+        "url": "https:\/\/www.smith.edu\/your-campus\/residence-life\/smith-houses\/paradise-neighborhood\/emerson-house"
+    },
+    {
+        "name": "Friedman Apartments",
+        "url": "https:\/\/www.smith.edu\/your-campus\/residence-life\/smith-houses\/paradise-neighborhood\/friedman-apartments"
+    },
+    {
+        "name": "Jordan House",
+        "url": "https:\/\/www.smith.edu\/your-campus\/residence-life\/smith-houses\/paradise-neighborhood\/jordan-house"
+    },
+    {
+        "name": "King House",
+        "url": "https:\/\/www.smith.edu\/your-campus\/residence-life\/smith-houses\/paradise-neighborhood\/king-house"
+    },
+    {
+        "name": "Park House",
+        "url": "https:\/\/www.smith.edu\/your-campus\/residence-life\/smith-houses\/paradise-neighborhood\/park-house"
+    },
+    {
+        "name": "Scales House",
+        "url": "https:\/\/www.smith.edu\/your-campus\/residence-life\/smith-houses\/paradise-neighborhood\/scales-house"
+    },
+    {
+        "name": "Chase House",
+        "url": "https:\/\/www.smith.edu\/your-campus\/residence-life\/smith-houses\/meadow-neighborhood-special-interest\/chase-house"
+    },
+    {
+        "name": "Granville House",
+        "url": "https:\/\/www.smith.edu\/your-campus\/residence-life\/smith-houses\/meadow-neighborhood-special-interest\/granville-house"
+    },
+    {
+        "name": "Hopkins House",
+        "url": "https:\/\/www.smith.edu\/your-campus\/residence-life\/smith-houses\/meadow-neighborhood-special-interest\/hopkins-house"
+    },
+    {
+        "name": "Tenney House",
+        "url": "https:\/\/www.smith.edu\/your-campus\/residence-life\/smith-houses\/meadow-neighborhood-special-interest\/tenney-house"
+    },
+    {
+        "name": "Yolanda King House",
+        "url": "https:\/\/www.smith.edu\/your-campus\/residence-life\/smith-houses\/meadow-neighborhood-special-interest\/yolanda-king-house"
+    },
+    {
+        "name": "Conway House",
+        "url": "https:\/\/www.smith.edu\/your-campus\/residence-life\/smith-houses\/river-neighborhood-ada\/conway-house"
+    },
+    {
+        "name": "Rothman House",
+        "url": "https:\/\/www.smith.edu\/your-campus\/residence-life\/smith-houses\/river-neighborhood-ada\/rothman-house"
+    },
+    {
+        "name": "44 Green Street",
+        "url": "https:\/\/www.smith.edu\/your-campus\/residence-life\/smith-houses\/river-neighborhood-graduate\/44-green-street"
+    }
+]

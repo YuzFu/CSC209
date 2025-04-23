@@ -1,0 +1,68 @@
+* {box-sizing: border-box}
+
+html {
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("../images/smith.jpg");
+}
+
+body {
+color: #211F20;
+margin: 0;
+}
+
+.header {
+overflow: hidden;
+background-color: #001D5B;
+padding: 20px 10px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.header a {
+float: left;
+color: #FCB616;
+text-align: center;
+padding: 12px;
+text-decoration: none;
+font-size: 18px; 
+line-height: 25px;
+border-radius: 4px;
+margin-left: 10px;
+}
+
+.header a.logo {
+font-size: 25px;
+font-weight: bold;
+}
+
+.header a:hover,
+.header a.active {
+background-color: #FCB616;
+color: #001D5B;
+}
+
+.header-right {
+float: right;
+}
+
+@media screen and (max-width: 500px) {
+.header a {
+    float: none;
+    display: block;
+    text-align: left;
+}
+
+.header-right {
+    float: none;
+}
+}
+
+.main {
+    padding-left: 20px;
+}

@@ -1,0 +1,131 @@
+html {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+  background-color: #FFFFB4;
+}
+
+body {
+  width: 50%;
+  color: #211F20;
+}
+
+/* https://discourse.mozilla.org/t/centering-complete-body-element/67572/2 */
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 4px;
+  background-color: #FFFFF0;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #1DB791;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+button.modal-trigger {
+  width: auto;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+  background-color: #FFFFB4;
+}
+
+img.logo {
+  width: 10%;
+  border-radius: 50%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 100px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #FFFFB4;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  border-radius: 8px;
+  width: 40%; /* Could be more or less, depending on screen size */
+  padding: 20px;
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  .modal-content {
+    width: 80%;
+  }
+}
+
