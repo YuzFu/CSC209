@@ -42,8 +42,10 @@ if (isset($_GET['fetch'])) {
             </div>
         </div>
 
-        <button onclick="updateUsers()" style="width:auto;">Update User List</button>
+        <div class="main">
         <div id="userList"></div>
+        <button onclick="updateUsers()" style="width:auto;">Update User List</button>
+        </div>
 
         <script src="../js/admin.js"></script>
     </body>
